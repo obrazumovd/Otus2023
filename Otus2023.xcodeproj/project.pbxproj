@@ -11,6 +11,7 @@
 		2CAB42B32A3F19130013300F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB42B22A3F19130013300F /* ContentView.swift */; };
 		2CAB42B52A3F19150013300F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB42B42A3F19150013300F /* Assets.xcassets */; };
 		2CAB42B82A3F19150013300F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB42B72A3F19150013300F /* Preview Assets.xcassets */; };
+		2CAB42C22A3F19E90013300F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB42C12A3F19E90013300F /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2CAB42B22A3F19130013300F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CAB42B42A3F19150013300F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CAB42B72A3F19150013300F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CAB42C12A3F19E90013300F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2CAB42B02A3F19130013300F /* Otus2023App.swift */,
 				2CAB42B22A3F19130013300F /* ContentView.swift */,
+				2CAB42BE2A3F194F0013300F /* HW#1 */,
 				2CAB42B42A3F19150013300F /* Assets.xcassets */,
 				2CAB42B62A3F19150013300F /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				2CAB42B72A3F19150013300F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CAB42BE2A3F194F0013300F /* HW#1 */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB42C12A3F19E90013300F /* Main.swift */,
+			);
+			path = "HW#1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAB42C22A3F19E90013300F /* Main.swift in Sources */,
 				2CAB42B32A3F19130013300F /* ContentView.swift in Sources */,
 				2CAB42B12A3F19130013300F /* Otus2023App.swift in Sources */,
 			);
@@ -280,6 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +322,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
