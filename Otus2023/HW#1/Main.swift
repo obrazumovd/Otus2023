@@ -103,6 +103,9 @@ struct MyTextView: UIViewRepresentable {
     }
 }
 
-#Preview {
-    Main()
+
+struct Main_Previews: PreviewProvider {
+    static var previews: some View {
+        Main()
+    }
 }
