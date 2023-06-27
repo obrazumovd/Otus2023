@@ -38,6 +38,10 @@ private extension Main {
                     icon: { Image(systemName: "3.circle") }
                 ) }
                 .tag(3)
+            NavigationContainer {
+                NewsList()
+            }.tabItem {  Label("HW#2", systemImage: "list.dash") }
+            .tag(4)
         }
     }
     
@@ -84,6 +88,7 @@ private extension Main {
             Text("ModalView")
         })
     }
+    
     var linkView: some View {
         VStack {
             Text("Link View")
