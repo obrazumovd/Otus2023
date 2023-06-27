@@ -22,6 +22,7 @@ final class NewsModel: ObservableObject {
     }
     
     func selectCategory(_ category: NewsCategory) {
+        self.article = []
         self.selectedCategory = category
         self.page = 1
         self.totalPages = .max
@@ -41,10 +42,11 @@ final class NewsModel: ObservableObject {
                                   language: "en",
                                   apiKey: "1c3a1d04cc674ddaa897818225da2afe",
                                   page: page) { [weak self] data, error in
+            guard let self = self else { return }
             debugPrint(error ?? "noError")
-            self?.article = data?.articles ?? []
-            self?.totalPages = Int((Double(data?.totalResults ?? 1) / 100).rounded(.up))
-            self?.canLoad = true
+            self.article.append(contentsOf: data?.articles ?? [])
+            self.totalPages = Int((Double(data?.totalResults ?? 1) / 100).rounded(.up))
+            self.canLoad = true
         }
     }
 }

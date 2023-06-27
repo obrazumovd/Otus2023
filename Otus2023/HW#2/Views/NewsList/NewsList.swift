@@ -39,45 +39,49 @@ private extension NewsList {
             }.toAnyView()
         }
         return ZStack {
-                List {
+            ScrollView {
+                LazyVStack {
                     ForEach(Array(model.article.enumerated()), id:\.offset) { index, article in
                         let isElementLast = model.article.isLast(article)
                         GeometryReader { geometry in
                             cell(article: article)
-                            
-                            .onTapGesture {
-                                Task {
-                                    isAnimateSelected = false
-                                    selected = article
-                                    selectedPosition = geometry.frame(in: .global)
-                                    print("selectedPosition = \(selectedPosition.midY)")
-                                    withAnimation (
-                                        Animation.linear(duration: 0.5)) {
-                                            isAnimateSelected = true
-                                        }
-                                    try await Task.sleep(nanoseconds: 500_000_000_)
-                                    guard selected == article else { return }
-                                    listener?.push(view: NewsDetailsView(newsDetailsModel: NewsDetailsModel(article: article)))
+                                .onAppear {
+                                    if model.canLoad && isElementLast {
+                                        model.nextPage()
+                                    }
                                 }
-                            }
+                                .onTapGesture {
+                                    Task {
+                                        isAnimateSelected = false
+                                        selected = article
+                                        selectedPosition = geometry.frame(in: .global)
+                                        print("selectedPosition = \(selectedPosition.midY)")
+                                        withAnimation (
+                                            Animation.linear(duration: 0.5)) {
+                                                isAnimateSelected = true
+                                            }
+                                        try await Task.sleep(nanoseconds: 500_000_000_)
+                                        guard selected == article else { return }
+                                        listener?.push(view: NewsDetailsView(newsDetailsModel: NewsDetailsModel(article: article)))
+                                    }
+                                }
                         }
                         .frame(height: 80)
-                        .onAppear {
-                            if !model.canLoad && isElementLast {
-                                model.nextPage()
-                            }
-                        }
+                        
                         .progressBar(isLoading: !model.canLoad && isElementLast)
                     }
+                }
+                .padding(.horizontal)
             }
-            cell(article: selected)
-                .frame(width: selectedPosition.width, height: selectedPosition.height)
-                .scaleEffect(isAnimateSelected ? 0.1 : 1)
-                .modifier(FavoriteEffect(isOn: isAnimateSelected,
-                                         offsetX: isAnimateSelected ? 150 : 0,
-                                         offsetY: isAnimateSelected ? size.height - selectedPosition.midY : 0))
-                .position(x: selectedPosition.midX,
-                          y: selectedPosition.midY - 50)
+                cell(article: selected)
+                    .frame(width: selectedPosition.width, height: selectedPosition.height)
+                    .scaleEffect(isAnimateSelected ? 0.1 : 1)
+                    .modifier(FavoriteEffect(isOn: isAnimateSelected,
+                                             offsetX: isAnimateSelected ? 150 : 0,
+                                             offsetY: isAnimateSelected ? size.height - selectedPosition.midY : 0))
+                    .position(x: selectedPosition.midX,
+                              y: selectedPosition.midY - 50)
+            
         }.toAnyView()
     }
     
