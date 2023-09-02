@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C242E9F2AA355F6002F0EE0 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C242E9E2AA355F6002F0EE0 /* Configurator.swift */; };
+		2C242EA12AA35601002F0EE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C242EA02AA35601002F0EE0 /* Injected.swift */; };
+		2C242EA32AA3560B002F0EE0 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C242EA22AA3560B002F0EE0 /* ServiceLocator.swift */; };
 		2C87CFC92A4A23A70067294E /* NewsApi23 in Frameworks */ = {isa = PBXBuildFile; productRef = 2C87CFC82A4A23A70067294E /* NewsApi23 */; };
 		2C87CFCC2A4A2BD80067294E /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C87CFCB2A4A2BD80067294E /* NewsList.swift */; };
 		2C87CFCE2A4A2BED0067294E /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C87CFCD2A4A2BED0067294E /* NewsModel.swift */; };
@@ -33,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C242E9E2AA355F6002F0EE0 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		2C242EA02AA35601002F0EE0 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		2C242EA22AA3560B002F0EE0 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		2C242EA92AA36316002F0EE0 /* OtusHwPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OtusHwPackage; sourceTree = "<group>"; };
 		2C87CFCB2A4A2BD80067294E /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		2C87CFCD2A4A2BED0067294E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		2C87CFD02A4A2D340067294E /* Date+Formater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formater.swift"; sourceTree = "<group>"; };
@@ -70,6 +77,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C242E9C2AA355D1002F0EE0 /* HW#3 */ = {
+			isa = PBXGroup;
+			children = (
+				2C242E9D2AA355D9002F0EE0 /* ServiceLocator */,
+			);
+			path = "HW#3";
+			sourceTree = "<group>";
+		};
+		2C242E9D2AA355D9002F0EE0 /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				2C242E9E2AA355F6002F0EE0 /* Configurator.swift */,
+				2C242EA02AA35601002F0EE0 /* Injected.swift */,
+				2C242EA22AA3560B002F0EE0 /* ServiceLocator.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		2C242EA42AA36254002F0EE0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				2C242EA92AA36316002F0EE0 /* OtusHwPackage */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
 		2C87CFCA2A4A2BA30067294E /* HW#2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +148,7 @@
 		2CAB42A42A3F19130013300F = {
 			isa = PBXGroup;
 			children = (
+				2C242EA42AA36254002F0EE0 /* Package */,
 				2CAB42AF2A3F19130013300F /* Otus2023 */,
 				2CAB42AE2A3F19130013300F /* Products */,
 			);
@@ -133,6 +167,7 @@
 			children = (
 				2CAB42B02A3F19130013300F /* Otus2023App.swift */,
 				2CAB42B22A3F19130013300F /* ContentView.swift */,
+				2C242E9C2AA355D1002F0EE0 /* HW#3 */,
 				2CAB42BE2A3F194F0013300F /* HW#1 */,
 				2C87CFCA2A4A2BA30067294E /* HW#2 */,
 				2C87CFCF2A4A2D230067294E /* Extensions */,
@@ -266,11 +301,14 @@
 				2CD3509B2A4B742A00F5779F /* NavigationViewModel.swift in Sources */,
 				2CD350A42A4B78AC00F5779F /* Date+DateComponents.swift in Sources */,
 				2C87CFDA2A4A31200067294E /* Article+Identifiable.swift in Sources */,
+				2C242EA12AA35601002F0EE0 /* Injected.swift in Sources */,
 				2C87CFDD2A4A317F0067294E /* FavoriteEffect.swift in Sources */,
+				2C242E9F2AA355F6002F0EE0 /* Configurator.swift in Sources */,
 				2CAB42C22A3F19E90013300F /* Main.swift in Sources */,
 				2C87CFD12A4A2D340067294E /* Date+Formater.swift in Sources */,
 				2CD3509D2A4B744000F5779F /* INavigationContainer.swift in Sources */,
 				2CAB42B32A3F19130013300F /* ContentView.swift in Sources */,
+				2C242EA32AA3560B002F0EE0 /* ServiceLocator.swift in Sources */,
 				2C87CFCC2A4A2BD80067294E /* NewsList.swift in Sources */,
 				2C87CFE12A4A31FE0067294E /* CharacterCell+Loading.swift in Sources */,
 				2CD350972A4B739900F5779F /* Screen.swift in Sources */,
