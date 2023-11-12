@@ -19,7 +19,7 @@ protocol MokStorageServiceProtocol: AnyObject {
     func deleteData(key: String) throws
 }
 
-final public class MokStorageService:  MokStorageServiceProtocol {
+final public class MokStorageService: StorageServiceProtocol {
     private var storage: [String: Any] = .init()
     
     public init() {}

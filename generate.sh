@@ -1,4 +1,4 @@
-SWIFT_MODULE_SRC="Package/NewsApi2023(2.0)/Sources/NewsApi2023(2.0)/"
+SWIFT_MODULE_SRC="Package/OtusHwPackage/Sources/NewsApi2023/"
 
 openapi-generator generate -i "newsapi.yaml" -g swift5 -o "api-mobile"
 

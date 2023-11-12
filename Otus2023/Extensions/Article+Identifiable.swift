@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import NewsApi23
+import OtusHwPackage
 
 extension Article: Identifiable {
     public var id: String { url }

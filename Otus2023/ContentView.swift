@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import NewsApi23
+import OtusHwPackage
 
 struct ContentView: View {
     var body: some View {

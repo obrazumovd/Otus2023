@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OtusHwPackage
 
 class Configurator {
     static let shared = Configurator()
@@ -16,6 +17,7 @@ class Configurator {
     }
     
     private func registerServices() {
-//        serviceLocator.addService(service: MokStorageService())
+        serviceLocator.addService(service: MokStorageService())
+        serviceLocator.addService(service: NewsService())
     }
 }

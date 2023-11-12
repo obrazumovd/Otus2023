@@ -10,7 +10,9 @@
 		2C242E9F2AA355F6002F0EE0 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C242E9E2AA355F6002F0EE0 /* Configurator.swift */; };
 		2C242EA12AA35601002F0EE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C242EA02AA35601002F0EE0 /* Injected.swift */; };
 		2C242EA32AA3560B002F0EE0 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C242EA22AA3560B002F0EE0 /* ServiceLocator.swift */; };
-		2C87CFC92A4A23A70067294E /* NewsApi23 in Frameworks */ = {isa = PBXBuildFile; productRef = 2C87CFC82A4A23A70067294E /* NewsApi23 */; };
+		2C48C05C2B01348B0023C5F3 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48C05B2B01348B0023C5F3 /* StorageView.swift */; };
+		2C48C05E2B0134900023C5F3 /* StorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48C05D2B0134900023C5F3 /* StorageModel.swift */; };
+		2C48C0602B01440F0023C5F3 /* HW1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48C05F2B01440F0023C5F3 /* HW1.swift */; };
 		2C87CFCC2A4A2BD80067294E /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C87CFCB2A4A2BD80067294E /* NewsList.swift */; };
 		2C87CFCE2A4A2BED0067294E /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C87CFCD2A4A2BED0067294E /* NewsModel.swift */; };
 		2C87CFD12A4A2D340067294E /* Date+Formater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C87CFD02A4A2D340067294E /* Date+Formater.swift */; };
@@ -26,6 +28,8 @@
 		2CAB42B52A3F19150013300F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB42B42A3F19150013300F /* Assets.xcassets */; };
 		2CAB42B82A3F19150013300F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB42B72A3F19150013300F /* Preview Assets.xcassets */; };
 		2CAB42C22A3F19E90013300F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB42C12A3F19E90013300F /* Main.swift */; };
+		2CB747DA2B014CA400B68D07 /* OtusHwPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB747D92B014CA400B68D07 /* OtusHwPackage */; };
+		2CB747DD2B014D3600B68D07 /* OtusUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB747DC2B014D3600B68D07 /* OtusUI */; };
 		2CD350972A4B739900F5779F /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD350962A4B739900F5779F /* Screen.swift */; };
 		2CD350992A4B741400F5779F /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD350982A4B741400F5779F /* NavigationStack.swift */; };
 		2CD3509B2A4B742A00F5779F /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3509A2A4B742A00F5779F /* NavigationViewModel.swift */; };
@@ -40,6 +44,9 @@
 		2C242EA02AA35601002F0EE0 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		2C242EA22AA3560B002F0EE0 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		2C242EA92AA36316002F0EE0 /* OtusHwPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OtusHwPackage; sourceTree = "<group>"; };
+		2C48C05B2B01348B0023C5F3 /* StorageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
+		2C48C05D2B0134900023C5F3 /* StorageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageModel.swift; sourceTree = "<group>"; };
+		2C48C05F2B01440F0023C5F3 /* HW1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1.swift; sourceTree = "<group>"; };
 		2C87CFCB2A4A2BD80067294E /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		2C87CFCD2A4A2BED0067294E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		2C87CFD02A4A2D340067294E /* Date+Formater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formater.swift"; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		2CAB42B42A3F19150013300F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CAB42B72A3F19150013300F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CAB42C12A3F19E90013300F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		2CB747DE2B014D6200B68D07 /* OtusUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OtusUI; sourceTree = "<group>"; };
 		2CD350962A4B739900F5779F /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		2CD350982A4B741400F5779F /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
 		2CD3509A2A4B742A00F5779F /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
@@ -70,7 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C87CFC92A4A23A70067294E /* NewsApi23 in Frameworks */,
+				2CB747DA2B014CA400B68D07 /* OtusHwPackage in Frameworks */,
+				2CB747DD2B014D3600B68D07 /* OtusUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +107,26 @@
 		2C242EA42AA36254002F0EE0 /* Package */ = {
 			isa = PBXGroup;
 			children = (
+				2CB747DE2B014D6200B68D07 /* OtusUI */,
 				2C242EA92AA36316002F0EE0 /* OtusHwPackage */,
 			);
 			path = Package;
+			sourceTree = "<group>";
+		};
+		2C48C0572B0132990023C5F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C48C05A2B0134790023C5F3 /* HW#4 */ = {
+			isa = PBXGroup;
+			children = (
+				2C48C05D2B0134900023C5F3 /* StorageModel.swift */,
+				2C48C05B2B01348B0023C5F3 /* StorageView.swift */,
+			);
+			path = "HW#4";
 			sourceTree = "<group>";
 		};
 		2C87CFCA2A4A2BA30067294E /* HW#2 */ = {
@@ -151,6 +177,7 @@
 				2C242EA42AA36254002F0EE0 /* Package */,
 				2CAB42AF2A3F19130013300F /* Otus2023 */,
 				2CAB42AE2A3F19130013300F /* Products */,
+				2C48C0572B0132990023C5F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +194,11 @@
 			children = (
 				2CAB42B02A3F19130013300F /* Otus2023App.swift */,
 				2CAB42B22A3F19130013300F /* ContentView.swift */,
-				2C242E9C2AA355D1002F0EE0 /* HW#3 */,
+				2CAB42C12A3F19E90013300F /* Main.swift */,
 				2CAB42BE2A3F194F0013300F /* HW#1 */,
 				2C87CFCA2A4A2BA30067294E /* HW#2 */,
+				2C242E9C2AA355D1002F0EE0 /* HW#3 */,
+				2C48C05A2B0134790023C5F3 /* HW#4 */,
 				2C87CFCF2A4A2D230067294E /* Extensions */,
 				2CAB42B42A3F19150013300F /* Assets.xcassets */,
 				2CAB42B62A3F19150013300F /* Preview Content */,
@@ -188,7 +217,7 @@
 		2CAB42BE2A3F194F0013300F /* HW#1 */ = {
 			isa = PBXGroup;
 			children = (
-				2CAB42C12A3F19E90013300F /* Main.swift */,
+				2C48C05F2B01440F0023C5F3 /* HW1.swift */,
 			);
 			path = "HW#1";
 			sourceTree = "<group>";
@@ -239,7 +268,8 @@
 			);
 			name = Otus2023;
 			packageProductDependencies = (
-				2C87CFC82A4A23A70067294E /* NewsApi23 */,
+				2CB747D92B014CA400B68D07 /* OtusHwPackage */,
+				2CB747DC2B014D3600B68D07 /* OtusUI */,
 			);
 			productName = Otus2023;
 			productReference = 2CAB42AD2A3F19130013300F /* Otus2023.app */;
@@ -270,7 +300,7 @@
 			);
 			mainGroup = 2CAB42A42A3F19130013300F;
 			packageReferences = (
-				2C87CFC72A4A23A70067294E /* XCLocalSwiftPackageReference "../Package/NewsApi23" */,
+				2CB747D82B014CA400B68D07 /* XCLocalSwiftPackageReference "Package/OtusHwPackage" */,
 			);
 			productRefGroup = 2CAB42AE2A3F19130013300F /* Products */;
 			projectDirPath = "";
@@ -306,12 +336,15 @@
 				2C242E9F2AA355F6002F0EE0 /* Configurator.swift in Sources */,
 				2CAB42C22A3F19E90013300F /* Main.swift in Sources */,
 				2C87CFD12A4A2D340067294E /* Date+Formater.swift in Sources */,
+				2C48C0602B01440F0023C5F3 /* HW1.swift in Sources */,
 				2CD3509D2A4B744000F5779F /* INavigationContainer.swift in Sources */,
 				2CAB42B32A3F19130013300F /* ContentView.swift in Sources */,
 				2C242EA32AA3560B002F0EE0 /* ServiceLocator.swift in Sources */,
 				2C87CFCC2A4A2BD80067294E /* NewsList.swift in Sources */,
+				2C48C05C2B01348B0023C5F3 /* StorageView.swift in Sources */,
 				2C87CFE12A4A31FE0067294E /* CharacterCell+Loading.swift in Sources */,
 				2CD350972A4B739900F5779F /* Screen.swift in Sources */,
+				2C48C05E2B0134900023C5F3 /* StorageModel.swift in Sources */,
 				2CD350A22A4B74E700F5779F /* NewsDetailsView.swift in Sources */,
 				2CAB42B12A3F19130013300F /* Otus2023App.swift in Sources */,
 				2CD350A02A4B74C400F5779F /* NewsDetailsModel.swift in Sources */,
@@ -462,7 +495,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +525,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,16 +563,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		2C87CFC72A4A23A70067294E /* XCLocalSwiftPackageReference "../Package/NewsApi23" */ = {
+		2CB747D82B014CA400B68D07 /* XCLocalSwiftPackageReference "Package/OtusHwPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Package/NewsApi23;
+			relativePath = Package/OtusHwPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2C87CFC82A4A23A70067294E /* NewsApi23 */ = {
+		2CB747D92B014CA400B68D07 /* OtusHwPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = NewsApi23;
+			productName = OtusHwPackage;
+		};
+		2CB747DC2B014D3600B68D07 /* OtusUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OtusUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

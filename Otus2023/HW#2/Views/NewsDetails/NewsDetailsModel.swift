@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-import NewsApi23
+import OtusHwPackage
 
 class NewsDetailsModel: ObservableObject {
     @Published private(set) var article: Article

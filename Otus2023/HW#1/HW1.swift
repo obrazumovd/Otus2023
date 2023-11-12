@@ -1,13 +1,14 @@
 //
-//  Main.swift
+//  HW1.swift
 //  Otus2023
 //
-//  Created by Dmitriy Obrazumov on 18/06/2023.
+//  Created by Dmitriy Obrazumov on 12/11/2023.
 //
 
 import SwiftUI
+import OtusUI
 
-struct Main: View {
+struct HW1: View {
     @State var isShowModal = false
     @State var isActiveLink = false
     @State var selectionTab = 1
@@ -17,7 +18,7 @@ struct Main: View {
     }
 }
 
-private extension Main {
+private extension HW1 {
     var tbView: some View {
         TabView(selection: $selectionTab)  {
             tab1
@@ -38,13 +39,8 @@ private extension Main {
                     icon: { Image(systemName: "3.circle") }
                 ) }
                 .tag(3)
-            NavigationContainer {
-                NewsList()
-            }.tabItem {  Label("HW#2", systemImage: "list.dash") }
-            .tag(4)
         }
     }
-    
     var tab1: some View {
         VStack {
             MyTextView(text: $text)
@@ -88,7 +84,6 @@ private extension Main {
             Text("ModalView")
         })
     }
-    
     var linkView: some View {
         VStack {
             Text("Link View")
@@ -96,21 +91,6 @@ private extension Main {
     }
 }
 
-struct MyTextView: UIViewRepresentable {
-    @Binding var text: String
-
-    func makeUIView(context: Context) -> UITextView {
-        UITextView()
-    }
-
-    func updateUIView(_ uiView: UITextView, context: Context) {
-        uiView.text = text
-    }
-}
-
-
-struct Main_Previews: PreviewProvider {
-    static var previews: some View {
-        Main()
-    }
+#Preview {
+    HW1()
 }

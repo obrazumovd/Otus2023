@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-import NewsApi23
+import OtusHwPackage
 
 struct NewsDetailsView: View, ItemView {
     var listener: INavigationContainer?
     
     @ObservedObject var newsDetailsModel: NewsDetailsModel
+    @State var isNavigationHiden = true
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,6 +20,13 @@ struct NewsDetailsView: View, ItemView {
             articlePage()
         }
         .padding(.horizontal)
+        .onAppear {
+            isNavigationHiden = true
+        }
+        .onDisappear {
+            isNavigationHiden = false
+        }
+        .navigationBarHidden(isNavigationHiden)
     }
 }
 

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import NewsApi23
+import OtusHwPackage
 
 struct NewsList: View, ItemView {
     @StateObject var model: NewsModel = .init()
